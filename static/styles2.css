@@ -1,0 +1,94 @@
+/* Other styles for form elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+form {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the form wrapper */
+.form-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for sign-in */
+.sign-in {
+    transform: rotate(7deg);
+    animation: animateRotate 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Keyframes for rotate animation */
+@keyframes animateRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(7deg); }
+}
+
+/* Animation for sign-in form */
+.animate-signin form {
+    animation: animateSignIn 1.58s ease-in-out forwards;
+}
+
+/* Keyframes for sign-in animation */
+@keyframes animateSignIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
