@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Options</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles4.css') }}">
+</head>
+<body>
+    <h1>Choose Test Option</h1>
+    <form action="/test" method="POST">
+        <label for="test_option">Select Test:</label>
+        <select id="test_option" name="test_option">
+            <option value="Aptitude">Aptitude</option>
+            <option value="Programming">Programming</option>
+        </select><br><br>
+        <input type="submit" value="Start Test">
+    </form>
+</body>
+</html>

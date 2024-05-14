@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+    <h1>Registration Successful!</h1>
+    <p>Generated Username: {{ username }}</p>
+    <p>Generated Password: {{ password }}</p>
+    <a href="/login">Login</a>
+</body>
+</html>
